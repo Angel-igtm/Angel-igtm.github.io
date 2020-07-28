@@ -1,0 +1,968 @@
+body
+    width: 100%
+    height: 100%
+    margin: 0
+    padding: 0
+span
+    font-family: 'Revalia', cursive
+    font-size: 48px
+    color: #34547A
+p
+    font-size: 16px
+    font-family: 'Roboto', sans-serif
+    width: 540px
+    line-height: 26px
+    color: #727272
+li
+    font-size: 16px
+    font-family: 'Roboto', sans-serif
+button
+    width: 200px
+    height: 60px
+    font-family: 'Roboto', sans-serif
+    text-transform: uppercase
+    border: none
+h1
+    font-size: 48px
+h2, h3, h4, h5
+    font-size: 32px
+.header
+    display: flex
+    width: 100%
+    justify-content: space-around
+    align-items: center
+    height: 130px
+    background: #EEEFF1
+label
+    display: none
+// .nav__right
+//     ul
+//         li
+//             display: inline
+//             margin: 0 22px
+//             color: #34547A
+//             font-weight: 600
+//             text-transform: uppercase
+.header__body
+    display: flex
+    justify-content: space-evenly
+    height: 500px
+    align-items: center
+    background: #EEEFF1
+.body__right
+    h1
+        margin: 0 0 60px 0
+    p
+        margin: 0 0 60px 0
+    button
+        font-size: 16px
+        background: #34547A
+        color: white
+@media ( max-width: 1252px )
+    span
+        font-size: 41px
+    // li
+    //     font-size: 14px
+    .nav__right
+        .main-menu
+            a
+                font-size: 14px
+    h1
+        font-size: 43px
+    .body__right 
+        p
+            font-size: 15px
+            width: 414px
+        button
+            width: 174px
+            height: 50px
+@media (max-width: 1151px)
+    .body__left
+        img
+            width: 92%
+    li
+        font-size: 13px
+    .body__right
+        p
+            width: 343px
+        button
+                width: 162px
+                height: 44px
+                font-size: 14px
+    h1
+        font-size: 39px
+    .nav__right
+        .main-menu
+            a
+                margin: 0 14px
+                font-size: 13px
+@media (max-width: 1000px)
+    li
+        font-size: 11px
+    .body__left
+        img
+            width: 85%
+    h1
+        font-size: 36px
+    .header
+        height: 110px
+    .nav__right
+        .main-menu
+            a
+                font-size: 12px
+                margin: 0 12px
+@media (max-width: 843px)
+    .body__right
+        p
+            font-size: 14px
+            width: 325px
+        h1
+            margin: 0 0 50px 0
+            font-size: 33px
+        button
+            width: 149px
+    .nav__right
+        width: 450px !important
+        .main-menu
+            a
+                font-size: 11px
+                margin: 0 11px
+    span
+        font-size: 36px
+    .header
+        height: 100px
+    .header__body
+        height: 450px
+@media (max-width: 737px)
+    .nav__right
+        width: 395px !important
+        .main-menu
+            a
+                margin: 0 9px
+                font-size: 10px
+    // li
+    //     font-size: 10px
+    .header
+        height: 77px
+    .body__left
+        width: 300px
+        img 
+            width: 80%
+    .body__right
+        h1
+            font-size: 30px
+            margin: 0 0 40px 0
+        p
+            margin: 0 0 40px 0
+            font-size: 12px
+            width: 274px
+        button
+            width: 129px
+            height: 38px
+            font-size: 13px
+    .header__body
+        height: 400px
+@media (max-width: 650px)
+    // li
+    //     font-size: 9px
+    .nav__right
+        width: 330px !important
+        .main-menu
+            a
+                margin: 0 4px
+    .body__right
+        h1
+            font-size: 26px
+        p
+            width: 242px
+        button
+            width: 122px
+            height: 35px
+            font-size: 12px
+@media (max-width: 554px)
+    span
+        font-size: 32px
+    .nav__right
+        .main-menu
+            a
+                font-size: 9px
+    // li
+    //     font-size: 9px
+    .body__right
+        h1
+            font-size: 24px
+            margin: 0 0 30px 0
+        p
+            margin: 0 0 30px 0
+            font-size: 11px
+    .body__left
+        width: 232px
+        img
+            width: 95%
+@media (max-width: 527px)
+    .header
+        height: 50px
+    span
+        font-size: 27px
+    li
+        font-size: 7px
+    .header__body
+        flex-direction: column
+        text-align: center
+        justify-content: center
+        height: 520px
+    .body__right
+        h1
+            font-size: 23px
+            margin: 25px 0 30px 0
+    label
+        display: block
+        position: absolute
+        top: 0
+        right: 20px
+        width: 100%
+        height: 100%
+        cursor: pointer
+        z-index: 2
+        line-height: 40px
+        font-size: 10px
+    .nav__right
+        width: 100px !important
+        height: 40px
+        background-color: #34547A
+        position: relative
+
+    .burger-line
+        position: absolute
+        top: 8px
+        right: 10px
+        width: 20px
+        height: 2px
+        background-color: #ffffff
+        transition: .5s all
+    .second, .third
+        top: 18px
+    .fourth
+        top: 28px
+    .main-menu
+        display: block
+        position: absolute
+        width: 100%
+        bottom: 0
+        left: 0
+        transform: translateY(100%)
+        max-height: 0
+        font-size: 0
+        overflow: hidden
+    .nav__right 
+        .main-menu 
+            a
+                font-size: 9px
+                margin: 0
+    a
+        display: block
+        width: 100%
+        padding: 10px
+        color: white
+        text-decoration: none
+        border-top: 1px solid rgba(255, 255, 255, .3)
+        background-color: #34547A
+    a:hover
+        background-color: #000000e6
+    #check-menu:checked ~ .main-menu
+        max-height: 500px
+        font-size: 16px
+    #check-menu:checked ~ .first 
+        display: none
+    #check-menu:checked ~ .second
+        transform: rotate(45deg)
+    #check-menu:checked ~ .third
+        transform: rotate(-45deg)
+    #check-menu:checked ~ .fourth
+        display: none
+.nav__right
+    width: 600px
+    color: white
+    text-align: center
+    font-family: 'Arial'
+#check-menu 
+    display: none
+.main-menu
+    a
+        text-decoration: none
+        margin: 0 17px
+        font-size: 16px
+        font-weight: 600
+        text-transform: uppercase
+.content__main
+    display: flex
+    flex-direction: column
+    align-items: center
+    h2
+        margin: 100px 0 50px 0
+    p
+        text-align: center
+.content
+    height: 1220px
+.content__item
+    width: 100%
+    height: 250px
+    background: #34547A
+    margin: 100px 0 100px 0
+.item-blocks
+    display: flex
+    width: 143px
+    margin: 0 25px 
+.block-elems
+    width: 93px
+    p
+        margin: 2px 0 0 20px
+        color: white
+        font-size: 21px
+        width: 40px  
+    span
+        color: white    
+        font-size: 16px
+        margin: 0 0 0 20px
+
+.main
+    display: flex
+    justify-content: center
+    align-items: center
+    height: inherit
+.item-skills
+    display: flex
+    justify-content: center
+    align-items: center
+.block__right
+    width: 500px
+    height: 400px
+    img
+        width: 100%
+        height: 100%
+.block__left
+    width: 500px
+    h2
+        margin: 0 0 50px 0
+    p
+        margin: 20px 0
+        width: 150px
+        // border-bottom: 2px solid
+    .line-skills
+        // border-bottom: 2px solid #34547A
+        height: 2px
+        max-width: 400px
+        background-color: #c4c4c4
+        width: 70%
+        // background-color: #34547A
+        div
+            width: 70%
+            background-color: #34547A
+            height: 2px
+@media (max-width: 1123px)
+    .content__item
+        height: 350px
+    .main
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+    .item-blocks
+        width: 300px
+        justify-content: center
+    .block__right
+        width: 450px
+        height: 350px
+@media (max-width: 1000px)
+    .block__right
+        width: 400px
+        height: 300px
+    .block__left
+        width: 440px
+    .item-blocks
+        width: 232px
+@media (max-width:883px)
+    .block__right
+        width: 334px
+        height: 286px
+    .block__left
+        width: 394px
+        h2
+            margin: 0 0 40px 0
+            font-size: 30px
+        p
+            margin: 14px 0
+            font-size: 15px
+    .content__main
+        p
+            font-size: 15px
+            width: 450px
+        h2
+            margin: 80px 0 40px 0
+    .content__item
+        margin: 60px 0 90px 0
+    .content
+        height: 1125px
+@media (max-width: 800px)
+    .item-blocks
+        width: 187px
+@media (max-width: 765px)
+    .block__right
+        width: 300px
+        height: 273px
+    .block__left
+        width: 340px
+        h2
+            font-size: 28px
+        p
+            font-size: 13px
+@media (max-width: 670px)
+    .block-img
+        width: 42px
+        height: 47px
+        img
+            width: 100%
+    .block-elems
+        p
+            font-size: 18px
+            margin: 0 0 0 20px
+        span
+            font-size: 14px
+    .content__main
+        h2
+            font-size: 28px
+            margin: 68px 0 33px 0
+        p
+            font-size: 14px
+            width: 400px
+    .item-blocks
+        width: 166px
+    .item-skills
+        flex-direction: column-reverse
+        height: 587px
+        align-items: center
+        justify-content: space-around
+    .content__item
+        margin: 50px 0
+    .block__left
+        text-align: center
+        p
+            width: 100%
+        .line-skills
+            margin-left: 50px
+    .content
+        height: 1304px
+@media (max-width: 600px)
+    .item-blocks
+        width: 135px
+    .block__right
+        width: 270px
+        height: 246px
+    .content__main
+        p
+            font-size: 13px
+            width: 360px
+        h2
+            font-size: 26px
+            margin: 56px 0 31px 0
+@media (max-width: 541px)
+    .main
+        grid-template-columns: 1fr 1fr
+        grid-gap: 27px
+        grid-column-gap: 91px
+        margin-left: 34px
+@media (max-width: 450px)
+    .content__main 
+        h2
+            font-size: 23px
+            margin: 51px 0 25px 0
+        p
+            font-size: 11px
+            width: 310px
+    .content__item
+        margin: 37px 0
+    .main
+        grid-column-gap: 33px
+        margin-left: 25px
+    .block__right
+        width: 250px
+        height: 225px
+    .block__left
+        h2
+            font-size: 24px
+            margin: 0 0 30px 0
+    .item-skills
+        height: 550px
+    .nav__right
+        height: 26px
+    .burger-line
+        top: 6px
+    .second, .third
+        top: 12px
+    .fourth
+        top: 18px
+    label
+        top: -7px
+        font-size: 9px
+    .content
+        height: 1193px
+@media (max-width: 383px)
+    .content__main 
+        h2
+            font-size: 21px
+            margin: 38px 0 20px 0
+    .main
+        grid-column-gap: 7px
+        margin-left: 17px
+    .block-elems
+        p
+            font-size: 15px
+        span
+            font-size: 12px
+    .block__right
+        width: 225px
+        height: 205px
+    .block-elems
+        width: 74px
+@media (max-width: 358px)
+    .item-blocks
+        width: 122px
+    .content__main
+        p
+            font-size: 10px
+            width: 228px
+@media (max-width: 343px)
+    .item-blocks
+        width: 107px
+        margin-left: 17px
+    .block-elems
+        line-height: 9px
+        p
+            font-size: 13px
+            margin: 0 0 0 14px
+        span
+            font-size: 11px
+            margin: 0 0 0 14px
+    .main
+        grid-column-gap: 0px
+        margin-left: 0
+        grid-template-columns: 130px 130px
+    .block__left
+        width: 100%
+@media (max-width:315px)
+    .block__left
+        h2
+            font-size: 20px
+        p
+            font-size: 11px
+    .content__main
+        h2
+            font-size: 20px
+@media (max-width: 290px)
+    .block__right
+        width: 200px
+        height: 190px
+@media (max-width: 250px)
+    .body__right
+        width: 167px
+        height: 164px
+        h1
+            font-size: 20px
+        p
+            width: 189px
+    .main
+        grid-template-columns: 110px 116px
+    .block__left
+        .line-skills
+            width: 60%
+    .content
+        height: 1180px
+    .item-skill
+        justify-content: space-evenly
+        height: 473px
+    .content__main
+        p
+            width: 193px
+    .body__left
+        margin-top: 38px
+    .header__body
+        height: 500px
+        justify-content: start
+    .item-blocks
+        margin-left: 8px
+    .content__item
+        margin: 24px 0
+
+.section
+    background: #EEEFF1 
+    height: 772px
+.section__movie
+    display: flex
+    flex-direction: column
+    align-items: center
+    height: 527px
+    .movie
+        width: 800px
+        height: 441px
+        img
+            width: 100%
+            height: 100%
+.section__item
+    display: flex
+    flex-direction: column
+    align-items: center
+    h3 
+        margin: 50px 0 40px 0
+    p
+        text-align: center
+        margin: 0 0 40px 0
+.icon
+    position: relative
+    bottom: 290px
+    width: 100px
+    img
+        width: 100%
+@media (max-width: 923px)
+    .section__movie
+        .movie
+            width: 600px
+            height: 400px
+    .icon
+        bottom: 248px
+        width: 79px
+@media (max-width: 670px)
+    .section__item
+        h3
+            font-size: 28px
+        p
+            width: 382px
+            font-size: 14px
+    .section__movie
+        .movie
+            width: 400px
+            height: 300px
+    .icon
+        bottom: 181px
+        width: 51px
+    .section
+        height: 600px
+@media (max-width: 436px)
+    .section__item
+        p
+            width: 299px
+            font-size: 13px
+        h3
+            font-size: 26px
+    .section__movie
+        .movie
+            width: 277px
+            height: 240px
+    .icon
+        bottom: 142px
+        width: 39px
+    .section
+        height: 550px
+@media (max-width: 335px)
+    .section__item
+        p
+            width: 174px
+            font-size: 12px
+        h3
+            font-size: 22px
+    .section__movie
+        .movie
+            width: 195px
+            height: 150px
+    .icon
+        bottom: 91px
+        width: 26px
+    .section
+        height: 500px
+.section__images
+    margin: 28px 0 0 0
+.block-image
+    width: 450px
+    height: 374px
+    .icon-eye
+        width: 100px
+        height: 100px
+    .img
+        width: 100%
+        height: 100%
+.first-line
+    display: flex
+.second-line
+    display: flex
+.block-icon
+    position: relative
+    bottom: 246px
+    width: 100%
+    text-align: center
+.block-microsoft
+    width: 209px
+    height: 93px
+    margin: 0 16px
+    img
+        width: 100%
+        height: 100%
+.section__footer
+    display: flex
+    justify-content: center
+    height: 217px
+    align-items: center
+@media (max-width: 1200px)
+    .block-image
+        height: 330px
+        .icon-eye
+            width: 90px
+            height: 90px
+    .block-icon
+        bottom: 210px
+@media (max-width: 1015px)
+    .block-image
+        height: 300px
+        .icon-eye
+            width: 80px
+            height: 80px
+    .block-microsoft
+        width: 150px
+        height: 77px
+    .block-icon
+        bottom: 193px
+@media (max-width: 900px)
+    .block-image
+        height: 275px
+        .icon-eye
+            width: 74px
+            height: 74px
+    .block-icon
+        bottom: 180px
+@media (max-width: 775px)
+    .block-icon
+        bottom: 161px
+    .block-image
+        height: 250px
+        .icon-eye
+            width: 68px
+            height: 68px
+    .block-microsoft
+        width: 107px
+        height: 64px
+@media (max-width: 727px)
+    .first-line
+        flex-direction: column
+        align-items: center
+    .block-image
+        width: 300px
+        height: 270px
+    .block-icon
+        bottom: 174px
+    .second-line
+        flex-direction: column
+        align-items: center
+    .block-microsoft
+        width: 99px
+        height: 54px
+    .section__footer
+        height: 160px
+@media (max-width: 574px)
+    .block-image
+        width: 260px
+        height: 257px
+    .block-microsoft
+        margin: 0 5px
+    .block__footer
+        height: 144px
+@media (max-width: 482px)
+    .section__footer
+        display: grid
+        grid-template-columns: 1fr 1fr
+    .block-microsoft
+        margin: 0
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        img 
+            width: 100px
+            height: 52px
+@media (max-width: 388px)
+    .block-image
+        width: 230px
+        height: 244px
+    .block-icon
+        bottom: 160px
+@media (max-width: 304px)
+    .block-image
+        width: 197px
+        height: 211px
+        .icon-eye
+            width: 63px
+            height: 63px
+    .block-icon
+        bottom: 143px
+    .block-microsoft
+        img
+            width: 90px
+            height: 47px
+@media (max-width: 250px)
+    .block-microsoft
+        img
+            width: 75px
+            height: 45px
+            margin-left: 8px
+    .block-image
+        width: 162px
+        height: 184px
+        .icon-eye
+            width: 56px
+            height: 56px
+    .block-icon
+        bottom: 123px
+.footer
+    background: #EEEFF1
+.footer__elem
+    display: flex
+    flex-direction: column
+    align-items: center
+    p
+        text-align: center
+        margin: 0
+    h4
+        margin: 63px 0
+.inp__name
+    text-align: center
+    input
+        width: 190px
+        height: 45px
+        font-size: 14px
+        margin: 50px 40px
+        padding-left: 15px
+.inp__mess
+    display: flex
+    flex-direction: column
+    align-items: center
+    button
+        margin: 46px 0 90px 0
+        background: #34547A
+        font-size: 14px
+        color: white
+        letter-spacing: 0.15em
+    textarea
+        margin: 0px
+        width: 487px !important
+        height: 150px !important
+        padding: 20px 0 0 20px
+.footer-item
+    background: #34547A
+    height: 150px
+    display: flex
+    justify-content: space-around
+    align-items: center
+.item__left
+    h5
+        color: white
+        margin: 0
+        font-size: 20px
+        margin-bottom: 20px
+    p
+        margin: 0
+        color: white
+        font-size: 13px
+.item__right
+    img
+        margin: 0 18px
+@media (max-width: 872px)
+    .inp__mess
+        button
+            width: 162px   
+            height: 44px   
+    .item__left
+        h5
+            width: 150px
+        p
+            width: 200px
+@media (max-width: 618px)
+    .footer__elem
+        h4
+            font-size: 25px
+            margin: 50px 0
+        p
+            font-size: 14px
+            width: 328px
+    .inp__name
+        input
+            width: 159px
+            margin: 45px 20px
+            height: 35px
+    .inp__mess
+        button 
+            font-size: 13px
+            width: 154px
+            height: 39px
+        textarea
+            width: 385px !important
+            height: 140px !important
+    .item__left
+        h5
+            font-size: 17px
+        p
+            font-size: 11px
+    .item__right
+        img
+            width: 36px
+@media (max-width: 456px)            
+    .footer__elem
+        h4
+            font-size: 18px
+    .inp__name
+        input
+            margin: 21px 20px
+    .inp__mess
+        textarea
+            margin-top: 19px
+            width: 232px !important
+            height: 121px !important
+    .item__left
+        width: 162px
+        h5
+            font-size: 16px
+        p
+            font-size: 10px
+    .item__right
+        img
+            width: 27px
+            margin: 0 9px
+@media (max-width: 340px)
+    .footer__elem
+        p
+            width: 203px
+    .item__left
+        width: 146px
+        h5
+            font-size: 14px
+    .footer__item
+        justify-content: center
+    .item__right
+        img
+            width: 23px
+            margin: 0 5px
+@media (max-width: 284px)
+    .inp__mess
+        textarea
+            width: 159px !important
+            height: 112px !important
+@media (max-width: 253px)
+    .item__left
+        h5
+            width: 92px
+        p
+            width: 147px
+    .item__right
+        img
+            margin: 0
+    .inp__mess
+        button
+            font-size: 11px
+            width: 123px
+            height: 39px
+            margin: 40px 0 60px 0
